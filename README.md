@@ -1,64 +1,94 @@
-AI Chatbot
+# AI Chatbot
 
-Real-time AI chatbot built with React on the frontend and Node.js / Express / Socket.io on the backend, using Google GenAI (Gemini 2.0 Flash) for AI responses.
+**Real-time** AI chatbot using **React** (frontend) and **Node.js / Express / Socket.io** (backend), powered by **Google GenAI (Gemini 2.0 Flash)**.
 
-🚀 Features
+## Table of Contents
 
-• Real-time bi-directional chat using Socket.io
-• Smart replies using Google GenAI (gemini-2.0-flash)
-• Maintains full chat history for contextual answers
-• Clean frontend + backend folder structure
-• dotenv + CORS enabled
-• Easy to extend and deploy
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Project Structure](#project-structure)  
+- [Prerequisites](#prerequisites)  
+- [Installation](#installation)  
+- [Configuration](#configuration)  
+- [Usage](#usage)  
+- [How It Works](#how-it-works)  
+- [Future Improvements](#future-improvements)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-📂 Project Structure
+---
 
-AI-chatbot/
-├── backend/
-│ ├── src/
-│ │ ├── app.js
-│ │ └── service/
-│ │ └── ai.service.js
-│ ├── server.js
-│ ├── package.json
-│ └── .env
-└── frontend/
-├── src/
-│ └── components/
-├── public/
-├── package.json
-└── vite.config.js
+## Features
 
-🔧 Prerequisites
+- Real-time chat with **Socket.io**  
+- Conversational AI responses via **Gemini 2.0 Flash**  
+- Maintains chat history for context-aware replies  
+- Clean and modular code structure  
+- Environment variables support with `dotenv`  
+- CORS enabled for secure cross-origin communication  
 
-• Node.js v16+
-• npm or yarn
-• Google GenAI API Key (Gemini)
-• .env file inside backend/
+---
 
-⚙️ Setup & Installation
+## Tech Stack
 
-Clone repository
-git clone https://github.com/Amit-Mahato-0001/AI-chatbot.git
+- **Frontend:** React, Vite  
+- **Backend:** Node.js, Express, Socket.io  
+- **AI:** Google GenAI (`@google/genai`)  
+- **Other:** dotenv, CORS  
 
-cd AI-chatbot
+---
 
-Backend setup
-cd backend
-npm install
+## Project Structure
 
-Create .env file inside backend/:
-GOOGLE_API_KEY=your_api_key_here
+AI-chatbot/  
+├── backend/  
+│   ├── src/  
+│   │   ├── app.js  
+│   │   └── service/  
+│   │       └── ai.service.js  
+│   ├── server.js  
+│   ├── package.json  
+│   └── .env  
+└── frontend/  
+    ├── src/  
+    │   └── components/  
+    ├── public/  
+    ├── package.json  
+    └── vite.config.js  
+
+---
+
+## Prerequisites
+
+- Node.js (recommend v16+)  
+- npm ya yarn  
+- Google GenAI API Key (Gemini)  
+- Internet connection (For AI)  
+
+---
+
+## Installation
+
+1. Clone karo repo:  
+   `git clone https://github.com/Amit-Mahato-0001/AI-chatbot.git`  
+   `cd AI-chatbot`  
+
+2. Backend setup:  
+   `cd backend`  
+   `npm install`  
+
+3. Frontend setup:  
+   `cd ../frontend`  
+   `npm install`  
+   `npm run dev`  
+
+---
+
+## Configuration
+
+Create a `.env` file in backend and set this variables :
+
+GOOGLE_API_KEY=your_google_genai_api_key_here
 PORT=3000
 
-Start backend:
-npm start
 
-Frontend setup
-cd ../frontend
-npm install
-npm run dev
-
-Frontend URL: http://localhost:5173
-
-Backend URL: http://localhost:3000
