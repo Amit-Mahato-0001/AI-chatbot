@@ -9,12 +9,7 @@
 - [Project Structure](#project-structure)  
 - [Prerequisites](#prerequisites)  
 - [Installation](#installation)  
-- [Configuration](#configuration)  
-- [Usage](#usage)  
-- [How It Works](#how-it-works)  
-- [Future Improvements](#future-improvements)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [Configuration](#configuration) 
 
 ---
 
